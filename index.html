@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
-
+<h1> Emoji Puppeteering by S. Blackmon </h1>
+<h3> Est. 2026</h3>
 <style>
+    
     /* FadeOut Animation */
     @keyframes fadeOut {
         0% { opacity: 1; }
@@ -78,19 +80,20 @@
                 <h1 id="ninjaEmoji">🥷🏼</h1>
                 <button
                     onclick='
+                   var ninjaEmojiHTML = document.getElementById("ninjaEmoji");
                     //*** YOUR JAVASCRIPT CODE HERE ***
-                    //Assign the fadeOut class to the HTML element with the ninja emoji
-
-
-                    '>Click me</button>
+                 ninjaEmojiHTML.className = "fadeOut";   //Assign the fadeOut class to the HTML element with the ninja emoji
+                   
+                   '>Click me</button>
             </div>
             <div class="assignmentBlock">
                 <h1>Slide</h1>
                 <h1 id="yogaEmoji">🧘🏾‍♀️</h1>
                 <button
                     onclick='
+                var yogaEmojiHTML = document.getElementById("yogaEmoji");
                     //*** YOUR JAVASCRIPT CODE HERE ***
-                    //Assign the slide class to the HTML element with the yoga emoji
+                   yogaEmojiHTML.className = "slide"; //Assign the slide class to the HTML element with the yoga emoji
 
 
                     '>Click me</button>
@@ -100,10 +103,9 @@
                 <h1 id="smileyEmoji">😀</h1>
                 <button
                     onclick='
+                    var smileyEmojiHTML = document.getElementById("smileyEmoji");
                     //*** YOUR JAVASCRIPT CODE HERE ***
-                    //Assign the grow class to the HTML element with the smiley emoji
-
-
+                   smileyEmojiHTML.className = "grow"; //Assign the grow class to the HTML element with the smiley emoji
                     '>Click me</button>
             </div>
             <h3>The following exercises will be more intricate.</h3>
@@ -247,6 +249,10 @@
         margin-bottom: 1%;
         font-size: 8vh;
         display: inline-block;
+    }
+    h1, h2, h3 {
+        text-align: center;
+        font-size   : 3vh;
     }
 </style>
 <!-- ======================== DO NOT MODIFY ======================== -->
